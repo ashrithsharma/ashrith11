@@ -1,0 +1,94 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style> 
+body{
+    background-image: url('https://cache.marriott.com/marriottassets/marriott/DELAL/delal-king-room-5932-hor-clsc.jpg?interpolation=progressive-bilinear&');
+    background-size: cover;
+} 
+form{
+    padding: 20px;
+    padding-bottom: 20px;
+    background-size: cover;
+background-color:burlywood;
+display:grid;
+border-style:groove;
+width:fit-content;
+ 
+}
+.registerbtn {  
+  background-color: black;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border:3px;  
+  cursor: pointer;  
+  width: 35%;  
+  opacity: 1.5;  
+}  
+.registerbtn:hover {  
+  opacity: 2;  
+}  
+h1{
+    color: darkmagenta;
+}
+</style>  
+</head>  
+<body>  
+    <h1><u><center> Hotel Registration Form</center></u></h1><br>
+<form>
+    Choose city<label>
+<select>
+<option value="hyderabad">Hyderabad</option>  
+<option value="chennai">Chennai </option>  
+<option value="kerala">kerala </option>
+<option value="Pondicherry">Pondicherry</option>  
+<option value="ooty">Ooty</option>  
+<option value="kodaikanal">kodaikanal</option>
+<option value="Goa">Goa</option>  
+<option value="Mumbai">Mumbai </option>  
+<option value="kolkata">kolkata </option>      
+<option value="vishakapatanam">vishakapatanam</option>  
+<option value="delhi">delhi </option>  
+<option value="manali">Manali</option>  
+</select>
+</label><br><br><br>
+choose Hotel:
+<label><select>
+<option value="Novotel">Novotel</option>
+<option value="ITC">ITC</option>
+<option value="radisson">Radisson</option>>
+<option value="Vivanta">Vivanta</option>
+<option value="The park">The park</option>
+</option>
+    </select>
+</label><br><br><br>
+     
+  <label> Firstname </label>   
+<input type="text" name="firstname" placeholder="Firstname" required /><br> <br><br>  
+<label> Middlename: </label>   
+<input type="text" name="middlename" placeholder="Middlename"  required /><br><br><br>
+<label> Lastname: </label>    
+<input type="text" name="lastname" placeholder="Lastname" required />   <br><br><br>
+<div>  <br><br>
+Choose any: 
+<label>
+<select>  
+<option value="Non-Ac Room">choose any</option>  
+<option value="AC Room"> Ac room </option>  
+<option value="Non-Ac Room">Non-Ac room </option>  
+</select> <br> 
+</label><br><br>
+Phone:<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2" width='5%'/><br><br><br> 
+Mobile No:<input type="text" name="phone" placeholder="phone no." size="10"/ required> <br><br><br>  
+Current Address :  
+<textarea cols="50" rows="2" placeholder="Current Address" value="address" required ></textarea><br><br><br>
+
+Email: <input type="text" placeholder="Enter Email" name="email" required><br><br><br>
+Password:<input type="password" placeholder="Enter Password" name="psw" required><br><br><br>
+Re-Type    <input type="password" placeholder="Retype Password" name="psw-repeat" required><br><br><br>  
+    <button type="submit" class="registerbtn">Register</button>    <br>
+</form>  
+</body>  
+</html>  
