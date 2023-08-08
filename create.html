@@ -1,0 +1,116 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Create Account</title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color:aliceblue 
+  
+
+}  
+button {   
+       background-color:black;   
+       width: 100%;  
+        color: white;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+        transition:width 1s ;
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+
+    }   
+ input[type=text], input[type=password] ,input[type=number]{
+        width: 100%;   
+        margin: 2px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px white;
+        opacity: 1.0;   
+        box-sizing: border-box;   
+    }  
+     
+ input[type=email], input[type=date]{
+        width: 100%;   
+        margin: 2px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px white;
+        opacity: 1.0;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;  
+        height: 102%; 
+
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color:white;  
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px powderblue;
+  padding: 50px;
+  margin: 10px;
+}
+  
+</style>   
+</head>    
+<body>    
+      
+    <center> 
+    <form action="login.html" target="_self" id="create">  
+        <div class="container">   
+          <center> <h1 class="background-color:bisque"> Create Account</h1> </center>
+            <b>Enter User Name:</b> <input type="text" placeholder="Enter Username" name="username" required>  <br><br>
+            <b>Enter Email:</b> <input type="email" placeholder="Enter email" name="email" required> <br> <br>
+            <b>Enter Mobileno(Optional):</b> <input type="text" placeholder="Enter Mobile NO" name="mobileno" ><br><br>
+            <b>Enter DOB(DD/MM/YYYY):</b> <input type="date" placeholder="Enter Date of the birth" name="DOB" required> <br><br>   
+            <b>Enter Address: </b><input type="text" placeholder="Enter Address" name="Address" required><br><br>
+            <b>Create Password:</b> <input type="password" placeholder="Create Password" id="enter" required><br><br>    
+            <b>Re-Enter passwrod:</b> <input type="password" placeholder="Re-Enter password" id="re_enter" required><br><br>         
+            <button  onclick="password()">Verify Password</button>      
+            <button type="submit">Create Account</button>   
+          <input type="checkbox" checked="checked">Remember me<br> 
+  <p><center><b>Login directly</b></center></p>
+<button  action="myfunc()">LOGIN </a></button>   
+        </div>   
+    </form>     
+
+  </center>
+</body>
+<script>
+     
+        function myFunc() {
+            window.location.href = "#login.html";
+        }
+        alert("Redirecting about the creation of the account");
+function password(){
+    
+var enter=document.getElementById("enter");
+var re_enter=document.getElementById("re_enter");
+if(enter==re_enter)
+{
+    alert("Passwords Matched");
+    
+}
+else
+{
+    alert("Passwords mis-matched ! Please try again");
+}
+}
+</script>     
+</html>
+
+       

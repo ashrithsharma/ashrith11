@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashrith Sharma</title>
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+            box-sizing:border-box;
+            -webkit-font-smoothing:antiliased;
+        }
+        header{
+            background-color: black;
+            clip-path: polygon(0 0,100% 0,100% 100%,73% 94%,0 100%);
+        }
+        header nav.left a{
+            color: var(--white);
+            text-decoration: none;
+            margin: right 2rem;
+            text-transform: uppercase;
+            transition:all 0.2s ease;
+        }
+        header nav.left a:hover{
+            color :white;
+        }
+        header nav{
+            padding: 2 rem 0;
+        }
+        header nav.logo{
+            margin-right: 3rem;
+        }
+        body{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container{
+            max-width: 1152px;
+            padding:0 15px;
+            margin:0 auto;
+             
+        }
+        .hero{
+            padding-top: 2rem;
+            padding-bottom: 3rem;
+
+        }
+        .hero .left img,p{
+            width:400px;
+            height:400px;
+            margin:70px;
+            border-radius: 300px;
+            color: aliceblue;
+
+        }
+        .hero .right{
+            color: var(--white);
+            margin: top -7rem;
+        }
+        .hero .right h6{
+            font-size: 1.8rem;
+            color:white;
+            margin-bottom: 0.5rem;
+        }
+        .hero .right h1{
+            font-size: 5rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+        font-weight: 100;
+        color: white;
+        }
+        .hero .right h1 span{
+            color:white;
+        }
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    align-items: self-end;
+}
+.h1{
+    align-items:right;
+}
+section{
+    padding:6 rem;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size:1.8rem;
+    font-weight: 700;
+}
+section.about h1 span{
+    color:var(--white);
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+section.about img{
+    height: min-content;
+    border-radius: 250px;
+    shape-image-threshold: inherit;
+}
+section.services .card-grid .card{
+    background: var(--white);
+    padding:3rem 2rem;
+
+}
+.right flex-1{
+align-items: self-end;
+}
+
+    </style>
+</head><body>
+    <header>
+        <div class="container">
+            <nav class="flex items-center justify-between">
+                <div class="logo"><img src="ashrith.jpeg" width="50px" alt="logo" height="50px" style="border-radius: 250px;" ></div>
+                <div> <button class="btn btn-primary"><a href="#">Home</a></button>  <button><a href="#">about</a></button>  <a href="#">skills</a></div>
+                <div class="right"><button class="btn btn-primary">contact</button></div>
+            </nav>
+        </div>
+        <div class="hero flex items-center justify-between">
+            <div class="left flex-1 justify-center">
+                <img src="ashrith.jpeg"></div>
+                <div class="right flex-1">
+<h6>Ashrith Sharma</h6>
+                                <h1>I like Java<br>
+                <span>developement</span></h1>
+                <p>Hello All,Im a computer Science Undergraduate Student ,interested in java development for the web & plain Software applications.</p>
+
+            </div>
+        </div>
+    </header>
+    <section class="about">
+        <div class="container flex items-center">
+            <div class="left flex-1 justify-right">
+                <img src="ashrith.jpeg" hegiht="400px" alt="profile pic">
+<p>I Like Java based developement</p>
+            </div>
+            <div class="right flex-1">
+                <h1>About<span>me</span></h1>
+                <h3>Hello,Im Ashrith Sharma</h3>
+                <p>
+                    I'm Ashrith Sharma,i loke to go with webdevelopmwnt,Core java & data analytics with the data visualoisations and data cleaning techniques.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
